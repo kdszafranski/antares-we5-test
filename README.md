@@ -1,24 +1,24 @@
-# Node AngularJS Boilerplate
+# Weekend Challenge 5 - Angular, Mongo, Bootstrap Oh My
 
-## About This Repo
+Welcome to weekend challenge 5! This weekend, you will take on the role of an application developer for a real estate company. You will be working with data that we will be providing to you. It will be a collection called *listings*. Inside of it, you will find information for properties that are either "for rent" or "for sale".
 
-Contains a node/express server with no routes, only static file serving.
+You job, is to get this data onto the DOM, accounting for the inconsistent datatypes that are possible with MongoDB. But additionally, let’s bring in Bootstrap to the mix to make sure that the application looks as good as possible.
 
-Contains AngularJS 1.6.3 and Angular Route 1.6.3 and has two generic controllers and views routed. The app also has a factory included but not used.
+## Project Requirements
 
-Contains Bootstrap CSS.
+- [ ] Create a Full Stack application from the ground up using Angular, Node, and MongoDB
+- [ ] Work with the data set that we have provide for you
+- [ ] Use Bootstrap to present the data
+- [ ] Account for the different data ("rent" versus "cost") and ensure that this is noted on the display of the information, by listing "For Rent" or "For Sale" based on which of the two properties that it has.
 
-NPM scripts for start and test. `npm test` runs modemon.
+## Importing the Provided Data File
 
+1. Download the *listingData.js* file.
+2. In Terminal, navigate to the folder where you downloaded the above file (or move it to where you want it).
+3. Run this command in your Terminal: `mongoimport --db realestate --collection listings --file listingData.js`
 
-## How To Use
+## Hard Mode
+Create an interface for adding additional rental or housing properties to the collection. You will need to give the user an option for either a Rent property, or a Sale property.
 
-This repo is intended as a bare-bones starting point. All you need is the files, not the git history or a connection to this remote repo.
-
-1. Download the zip file and unzip
-2. Change directory to this new folder
-3. Run `npm install` to download the dependencies
-4. Run `git init` to start tracking your new project code
-5. You're ready to start coding your own project
-
-**You will need to set up your own Github repo and connect it as a remote repo.**
+## Pro Mode
+Host the application on Heroku and mLabs. You will need to transfer the data up to mLabs. You will need to research how to accomplish this.
