@@ -4,8 +4,8 @@
   "description": "Boilerplate starting point for node, express, angular apps",
   "main": "server/app.js",
   "scripts": {
-    "test": "nodemon server/app.js",
-    "start": "node server/app.js"
+    "test": "nodemon server/server.js",
+    "start": "node server/server.js"
   },
   "author": "Kris Szafranski",
   "license": "ISC",

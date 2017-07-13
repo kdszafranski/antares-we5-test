@@ -3,9 +3,9 @@ var myApp = angular.module('myApp', ['ngRoute']);
 myApp.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
-        .when('/home', {
-            templateUrl: '/views/templates/home.html',
-            controller: 'HomeController',
+        .when('/listings', {
+            templateUrl: '/views/templates/listings.html',
+            controller: 'ListingController',
             controllerAs: 'hc'
         })
         .when('/other', {
@@ -14,6 +14,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
             controllerAs: 'oc'
         })
         .otherwise({
-            redirectTo: 'home'
+            redirectTo: 'listings'
         });
 }]);
