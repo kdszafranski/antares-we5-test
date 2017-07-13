@@ -1,10 +1,13 @@
 var express = require('express');
 var app = express();
 var path = require('path');
+var listing = require('./routes/listing');
 
 // Serve back static files
 app.use(express.static('./server/public'));
 
+// routes
+app.use('/listing', listing);
 
 // Handle index file separately
 app.get('/', function(req, res) {

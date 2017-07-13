@@ -6,7 +6,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
         .when('/listings', {
             templateUrl: '/views/templates/listings.html',
             controller: 'ListingController',
-            controllerAs: 'hc'
+            controllerAs: 'lc'
         })
         .when('/other', {
             templateUrl: '/views/templates/other.html',
